@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJASAHA Hospital - Doctors Directory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%);
+            min-height: 100vh;
+            color: #0f172a;
+            padding: 30px 20px;
+        }
+        /* Navigation Bar */
+        
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            padding: 15px 40px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #0369a1;
+            font-weight: 600;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: #0369a1;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            color: #0284c7;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 10px;
+        }
+        
+        .doctor-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(3, 105, 161, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #bae6fd;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .doctor-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(3, 105, 161, 0.25);
+        }
+        
+        .image-container {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #f0f9ff;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .doctor-card:hover .image-container img {
+            transform: scale(1.05);
+        }
+        
+        .card-content {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .card-content h2 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #0369a1;
+            margin-bottom: 4px;
+        }
+        
+        .category {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-weight: 600;
+        }
+        
+        .details {
+            font-size: 0.85rem;
+            color: #475569;
+        }
+        
+        .material {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+        
+        .book-btn {
+            background-color: #0284c7;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .book-btn:hover {
+            background-color: #0369a1;
+        }
+        
+        .back-nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .back-link {
+            text-decoration: none;
+            background-color: #0369a1;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="C:\vs code\pro1.html">Home</a></li>
+            <li><a href="C:\vs code\pro services.html">Services</a></li>
+            <li><a href="C:\vs code\pro about.html">About Us</a></li>
+            <li><a href="C:\vs code\pro contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>✨ RAJASAHA Expert Doctors ✨</h1>
+        <p>Select your specialist and book your consultation</p>
+    </header>
+
+    <main class="container">
+        <div class="card-grid">
+
+            <div class="doctor-card">
+                <div class="image-container">
+                    <img src="doc1.jpeg" alt="Dr. Robert Smith">
+                </div>
+                <div class="card-content">
+                    <h2>DR. ROBERT SMITH - $100</h2>
+                    <p class="category">Cardiologist</p>
+                    <p class="details">Heart Specialist</p>
+                    <p class="material">MBBS, MD (Cardiology)</p>
+                    <a href="C:\vs code\pro 4.html" class="book-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="doctor-card ">
+                <div class="image-container ">
+                    <img src="doc2.jpeg " alt="Dr. Sarah Johnson ">
+                </div>
+                <div class="card-content ">
+                    <h2>DR. SARAH JOHNSON - $150</h2>
+                    <p class="category ">Pediatrician</p>
+                    <p class="details ">Child Specialist</p>
+                    <p class="material ">MBBS, DCH</p>
+                    <a href="C:\vs code\pro5.html " class="book-btn ">Book Now</a>
+                </div>
+            </div>
+
+            <div class="doctor-card ">
+                <div class="image-container ">
+                    <img src="doc3.jpeg " alt="Dr. Michael Chen ">
+                </div>
+                <div class="card-content ">
+                    <h2>DR. MICHAEL CHEN - $120</h2>
+                    <p class="category ">Neurologist</p>
+                    <p class="details ">Brain & Spine</p>
+                    <p class="material ">MBBS, DM (Neurology)</p>
+                    <a href="C:\vs code\pro3.html " class="book-btn ">Book Now</a>
+                </div>
+            </div>
+
+            <div class="doctor-card ">
+                <div class="image-container ">
+                    <img src="doc4.jpeg " alt="Dr. Emily Davis ">
+                </div>
+                <div class="card-content ">
+                    <h2>DR. EMILY DAVIS - $200</h2>
+                    <p class="category ">Dermatologist</p>
+                    <p class="details ">Skin Specialist</p>
+                    <p class="material ">MBBS, MD (Dermatology)</p>
+                    <a href="doc444.html " class="book-btn ">Book Now</a>
+                </div>
+            </div>
+
+            <div class="doctor-card ">
+                <div class="image-container ">
+                    <img src="doc5.jpeg " alt="Dr. David Wilson ">
+                </div>
+                <div class="card-content ">
+                    <h2>DR. JAMES- $180</h2>
+                    <p class="category ">Orthopedic Surgeon</p>
+                    <p class="details ">Bone & Joint Specialist</p>
+                    <p class="material ">MBBS, MS (Orthopedics)</p>
+                    <a href="C:\vs code\pro2.html " class="book-btn ">Book Now</a>
+                </div>
+            </div>
+
+            <div class="doctor-card ">
+                <div class="image-container ">
+                    <img src="doc 5.jpg " alt="Dr. Jessica Taylor ">
+                </div>
+                <div class="card-content ">
+                    <h2>DR. JOHN - $130</h2>
+                    <p class="category ">Ophthalmologist</p>
+                    <p class="details ">Eye Care Specialist</p>
+                    <p class="material ">MBBS, MS (Ophthalmology)</p>
+                    <a href="C:\vs code\pro 55.html " class="book-btn ">Book Now</a>
+                </div>
+            </div>
+
+            <div class="doctor-card ">
+                <div class="image-container ">
+                    <img src="doc 6.jpg " alt=" Dr. James Anderson ">
+                </div>
+                <div class="card-content ">
+                    <h2>DR. GAJA- $160</h2>
+                    <p class="category ">ENT Specialist</p>
+                    <p class="details ">Ear, Nose & Throat</p>
+                    <p class="material ">MBBS, MS (ENT)</p>
+                    <a href="C:\vs code\pro7g.html " class="book-btn ">Book Now</a>
+                </div>
+            </div>
+
+            <div class="doctor-card ">
+                <div class="image-container ">
+                    <img src="doc8.jpg " alt="Dr. Lisa Martinez ">
+                </div>
+                <div class="card-content ">
+                    <h2>DR. LISA - $140</h2>
+                    <p class="category ">Gynecologist</p>
+                    <p class="details ">Women's Health Specialist</p>
+                    <p class="material ">MBBS, DGO, MD</p>
+                    <a href="C:\vs code\pro8.html " class="book-btn ">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="back-nav ">
+        <a href="C:\vs code\pro1.html " class="back-link ">← Back to Home</a>
+    </div>
+
+</body>
+
+</html>
